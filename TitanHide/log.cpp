@@ -14,7 +14,7 @@ void Log(const char* format, ...)
     va_end(format);
     UNICODE_STRING FileName;
     OBJECT_ATTRIBUTES objAttr;
-    RtlInitUnicodeString(&FileName, L"\\DosDevices\\C:\\TitanHide.log");
+    RtlInitUnicodeString(&FileName, L"\\DosDevices\\C:\\TitanHideZ.log");
     InitializeObjectAttributes(&objAttr, &FileName,
                                OBJ_CASE_INSENSITIVE | OBJ_KERNEL_HANDLE,
                                NULL, NULL);
